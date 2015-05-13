@@ -72,15 +72,10 @@ def initialDraw():
 		draw_line_to_point(Canvas, el, [screen_width/2, screen_height/2], "#ff0000")
 	
 def debug(event):
-	print "click"
+	print ""
 	
 Canvas.bind("<Motion>", redraw)
 Canvas.bind("<Button-1>", debug)
 initialDraw()
-
-print LineSegments
-
-def printsth():
-	print "HELLO"
 
 root.mainloop()
